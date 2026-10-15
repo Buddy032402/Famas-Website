@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         name: 'Delcampo, Christopher',
-        position: 'Treasurer • Director',
+        position: 'Treasurer • Full Director of Photography',
         image: 'assets/images/members/DEL CAMPO - DIRECTOR OF PHOTOGRAPHY (TREASURER).png',
         bio: 'Balances club operations while directing creative projects.',
         group: 'officer'
