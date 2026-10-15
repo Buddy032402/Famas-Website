@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | Filmmakers' Society Club of Assumption College of Davao</title>
+    <meta
+      name="description"
+      content="Browse upcoming and recent events, screenings, workshops, and club activities for the Filmmakers' Society Club of Assumption College of Davao."
+    />
+    <meta property="og:title" content="Events | 𝐅𝐀𝐌𝐀𝐒" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+          <a class="brand" href="index.html" aria-label="Filmmakers Society home">
+            <img class="brand-mark" src="assets/images/gallery/famas_logo.jpg" alt="Filmmakers Society logo" />
+            <span>𝐅𝐀𝐌𝐀𝐒</span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-links" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="members.html">Members</a>
+            <a href="films.html">Films</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero cinematic-hero">
+          <div class="page-hero-media" role="img" aria-label="Cinematic event poster lighting and creative production backdrop"></div>
+          <div class="page-hero-overlay"></div>
+
+          <div class="container reveal" data-reveal>
+            <div class="page-hero-copy">
+              <p class="eyebrow">Events</p>
+              <h1>WHAT&apos;S HAPPENING BEHIND THE SCENES?</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading centered">
+              <p class="eyebrow">Featured announcement</p>
+              <h2>Club updates, screenings, and creative moments.</h2>
+            </div>
+            <div id="featuredEvent" aria-live="polite"></div>
+            <p class="form-note" style="margin-top: 1rem; text-align: center;">
+              New club video updates and event highlights will appear here as they are posted.
+            </p>
+          </div>
+        </section>
+
+        <section class="section muted-section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading row-title">
+              <div>
+                <p class="eyebrow">Schedule</p>
+                <h2>Upcoming and recent activity.</h2>
+              </div>
+              <div class="event-filter-wrap">
+                <label class="sr-only" for="eventFilter">Filter events</label>
+                <select id="eventFilter" class="film-filter" aria-label="Filter events by status">
+                  <option value="upcoming">Upcoming</option>
+                  <option value="past">Past</option>
+                  <option value="all">All</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="eventsGrid" class="event-grid" aria-live="polite"></div>
+            <div id="eventsEmptyState" class="empty-state" hidden>
+              There are no upcoming events to display yet. Check back for confirmed screenings, workshops, and club activities as they are announced.
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading centered">
+              <p class="eyebrow">Club activities</p>
+              <h2>Creative work that happens across the club.</h2>
+            </div>
+
+            <div class="event-category-grid">
+              <article class="highlight-panel">
+                <p class="eyebrow">Workshops</p>
+                <h3>Practical learning and hands-on creative sessions.</h3>
+                <p>Workshop schedules and details will be added when official club plans are confirmed.</p>
+              </article>
+
+              <article class="highlight-panel">
+                <p class="eyebrow">Filming activities</p>
+                <h3>Production work, planning, and collaboration.</h3>
+                <p>Filming opportunities are listed here once the club and moderators confirm the event details.</p>
+              </article>
+
+              <article class="highlight-panel">
+                <p class="eyebrow">Competitions</p>
+                <h3>Creative challenges and showcases.</h3>
+                <p>Competition and showcase details will be posted here when official club updates are shared.</p>
+              </article>
+
+              <article class="highlight-panel">
+                <p class="eyebrow">Club meetings</p>
+                <h3>Planning sessions and member check-ins.</h3>
+                <p>Meeting schedules and venues will be added after official club coordination is confirmed.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section muted-section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Past events</p>
+              <h2>Recent highlights and milestones.</h2>
+            </div>
+            <div id="pastEventsList" class="activities-list" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="container reveal" data-reveal>
+            <div class="cta-panel">
+              <div>
+                <p class="eyebrow">Questions</p>
+                <h2>NEED DETAILS ABOUT A CLUB ACTIVITY?</h2>
+              </div>
+              <a class="btn btn-primary" href="contact.html">Ask the club</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="Filmmakers Society home">
+              <img class="brand-mark" src="assets/images/gallery/famas_logo.jpg" alt="Filmmakers Society logo" />
+              <span>𝐅𝐀𝐌𝐀𝐒</span>
+            </a>
+            <p class="footer-copy">
+              Filmmakers&apos; Society of Assumption College of Davao. Capturing people, process, and purpose through visual storytelling.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="members.html">Members</a></li>
+              <li><a href="films.html">Films</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Connect</h3>
+            <ul class="footer-links">
+              <li><a href="contact.html">Questions</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p>© <span id="currentYear"></span> Filmmakers&apos; Society of Assumption College of Davao.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members | Filmmakers' Society Club of Assumption College of Davao</title>
+    <meta
+      name="description"
+      content="Meet the creative community behind the Filmmakers' Society Club of Assumption College of Davao. Member profiles and roles are listed in a searchable, easy-to-update format."
+    />
+    <meta property="og:title" content="Members | 𝐅𝐀𝐌𝐀𝐒" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+          <a class="brand" href="index.html" aria-label="Filmmakers Society home">
+            <img class="brand-mark" src="assets/images/gallery/famas_logo.jpg" alt="Filmmakers Society logo" />
+            <span>𝐅𝐀𝐌𝐀𝐒</span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-links" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="members.html" class="active">Members</a>
+            <a href="films.html">Films</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="events.html">Events</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero cinematic-hero">
+          <div class="page-hero-media" role="img" aria-label="Cinematic portrait backdrop for the club members"></div>
+          <div class="page-hero-overlay"></div>
+
+          <div class="container reveal" data-reveal>
+            <div class="page-hero-copy">
+              <p class="eyebrow">Members</p>
+              <h1>THE PEOPLE BEHIND THE FRAME.</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading centered">
+              <p class="eyebrow">Club community</p>
+              <h2>Creativity grows through collaboration.</h2>
+            </div>
+            <div class="section-intro">
+              <p>
+                The Filmmakers&apos; Society of Assumption College of Davao is built on the shared energy of students who care
+                about storytelling, craft, and creative exchange. This directory celebrates the members who contribute to the
+                club&apos;s collaborative spirit and growing creative culture.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section muted-section">
+          <div class="container reveal" data-reveal>
+            <div class="member-toolbar" aria-label="Member search and filters">
+              <label class="sr-only" for="memberSearch">Search member names</label>
+              <input id="memberSearch" class="member-search" type="search" placeholder="Search member name" aria-label="Search member names" />
+
+              <label class="sr-only" for="positionFilter">Filter by position</label>
+              <select id="positionFilter" class="member-filter" aria-label="Filter by position">
+                <option value="all">All positions</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Officers</p>
+              <h2>Leadership and club coordination.</h2>
+            </div>
+            <div id="moderatorList" class="moderator-row" aria-live="polite"></div>
+            <div id="officersList" class="member-carousel" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section muted-section">
+          <div class="container reveal" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Members</p>
+              <h2>Student creatives and contributors.</h2>
+            </div>
+            <div id="membersList" class="member-carousel" aria-live="polite"></div>
+            <div id="memberNoResults" class="empty-state" hidden>
+              No current members match your search. Try a different name or filter option.
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta-section">
+          <div class="container reveal" data-reveal>
+            <div class="cta-panel">
+              <div>
+                <p class="eyebrow">Join the club</p>
+                <h2>YOU BELONG IN THE FRAME.</h2>
+              </div>
+              <a class="btn btn-primary" href="join.html">Become a Member</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="Filmmakers Society home">
+              <img class="brand-mark" src="assets/images/gallery/famas_logo.jpg" alt="Filmmakers Society logo" />
+              <span>𝐅𝐀𝐌𝐀𝐒</span>
+            </a>
+            <p class="footer-copy">
+              Filmmakers&apos; Society of Assumption College of Davao. Creating stories, preserving craft, and growing with
+              every frame.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="members.html">Members</a></li>
+              <li><a href="films.html">Films</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Connect</h3>
+            <ul class="footer-links">
+              <li>Video updates will be shared here.</li>
+              <li>Official club details will be posted as they are verified.</li>
+              <li>More content will appear with each new upload.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p>© <span id="currentYear"></span> Filmmakers&apos; Society of Assumption College of Davao.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
